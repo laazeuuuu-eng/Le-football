@@ -1,0 +1,350 @@
+/* Style général du site */
+body{
+background:linear-gradient(135deg, #0a1f44 0%, #1a3a6b 100%);
+margin:0;
+font-family:'Poppins', Arial, Helvetica, sans-serif;
+color:white;
+}
+
+/* Paragraphes */
+p{
+font-size:25px;
+color:#ffffff;
+font-weight:400;
+letter-spacing:0.5px;
+text-shadow:1px 1px 2px rgba(0,0,0,0.3);
+}
+
+/* Titres */
+h1{
+font-size:40px;
+color:#ffffff;
+text-align:center;
+padding:10px;
+text-transform:uppercase;
+font-weight:800;
+text-shadow:3px 3px 0px #3a86ff, 5px 5px 0px rgba(255,255,255,0.3);
+border-bottom:3px solid #ffffff;
+display:inline-block;
+padding-bottom:15px;
+margin-bottom:30px;
+}
+
+h2{
+color:#ffffff;
+font-size:32px;
+font-weight:700;
+border-left:5px solid #ffffff;
+padding-left:15px;
+margin:20px 0;
+text-shadow:2px 2px 0px #3a86ff;
+text-align: center;
+}
+
+/* Image de fond */
+.Some{
+background-repeat:no-repeat;
+background-size:cover;
+background-position:center;
+border:3px solid #ffffff;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(255,255,255,0.2);
+}
+
+/* Style joueur */
+.joueur{
+background:linear-gradient(145deg, #ffffff, #f0f5ff);
+color:#0a1f44;
+padding:20px;
+border-radius:0 20px 20px 20px ;
+box-shadow:0 10px 30px rgba(255,255,255,0.3);
+border-left:5px solid #ffffff;
+border-right:5px solid #3a86ff;
+transition:all 0.3s ease;
+margin-left: auto;
+}
+
+.joueur:hover{
+box-shadow:0 15px 40px rgba(255,255,255,0.4);
+transform:translateY(-5px);
+}
+
+.joueur p{
+color:#0a1f44;
+font-weight:500;
+margin-left: auto;
+}
+
+/* Header */
+header{
+background:linear-gradient(90deg, #00296b, #3a86ff, #00296b);
+padding:30px;
+text-align:center;
+box-shadow:0 4px 20px rgba(255,255,255,0.3);
+border-bottom:5px solid #ffffff;
+border-top:5px solid #ffffff;
+}
+
+/* Navigation */
+nav ul{
+list-style:none;
+padding:0;
+display:flex;
+justify-content:flex-end;
+flex-wrap:wrap;
+margin-right:30px;
+}
+
+nav ul li{
+display:inline-block;
+margin:0 15px;
+text-align:center;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+font-weight:bold;
+padding:12px 25px;
+transition:all 0.3s ease;
+border-radius:30px;
+background-color:rgba(255,255,255,0.1);
+border:2px solid rgba(255,255,255,0.3);
+font-size:18px;
+letter-spacing:1px;
+backdrop-filter:blur(5px);
+}
+
+/* Effet menu */
+
+
+/* Page active */
+.active{
+background-color:#ffffff;
+color:#0a1f44;
+font-weight:bold;
+border:2px solid #ffffff;
+box-shadow:0 0 20px rgba(255,255,255,0.7);
+}
+
+/* Sections */
+section{
+padding:40px;
+text-align:center;
+border:2px dashed #ffffff;
+border-radius:30px;
+margin:20px;
+background-color:rgba(255,255,255,0.05);
+backdrop-filter:blur(5px);
+}
+
+/* Images générales */
+img{
+width:100%;
+max-width:500px;
+height:100%;
+object-fit:cover;
+margin:10px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(255,255,255,0.3);
+transition:all 0.4s ease;
+border:3px solid #ffffff;
+}
+img:hover{
+transform:scale(1.08) rotate(1deg);
+border:3px solid #ffffff;
+box-shadow:0 20px 40px rgba(255,255,255,0.5);
+}
+
+/* Section histoire */
+.histoire .contenu{
+display:flex;
+gap:30px;
+align-items:flex-start;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.histoire .images{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.histoire .images img{
+width:350px;
+height:auto;
+border:3px solid #ffffff;
+}
+
+.histoire .images img:hover{
+border:3px solid #ffffff;
+box-shadow:0 15px 35px rgba(255,255,255,0.5);
+}
+
+/* Texte histoire */
+.histoire .texte{
+max-width:800px;
+line-height:1.8;
+text-align:left;
+padding:25px;
+font-size:18px;
+border:2px solid #ffffff;
+border-radius:20px;
+background-color:rgba(255,255,255,0.1);
+backdrop-filter:blur(5px);
+}
+
+.histoire .texte p{
+color:#ffffff;
+margin-bottom:15px;
+}
+.competition{
+background:linear-gradient(145deg,#ffffff,#f0f5ff);
+color:#0a1f44;
+padding:20px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(255,255,255,0.3);
+margin:20px;
+}
+/* Vidéos */
+iframe, video{
+margin-top:20px;
+border-radius:20px;
+max-width:100%;
+box-shadow:0 10px 30px rgba(255,255,255,0.3);
+transition:all 0.4s ease;
+}
+
+iframe:hover, video:hover{
+transform:scale(1.02);
+box-shadow:0 20px 40px rgba(255,255,255,0.5);
+}
+
+/* Vidéo en arrière-plan */
+#video-background{
+background-repeat: no-repeat;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+overflow:hidden;
+z-index:-1; 
+}
+
+#video-background video{
+width:100%;
+height:100%;
+object-fit:cover;
+border:none;
+box-shadow:none;
+filter:brightness(0.6) saturate(1.2);
+}
+
+#video-background::after{
+content:'';
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:linear-gradient(135deg, rgba(10,31,68,0.4), rgba(58,134,255,0.2));
+pointer-events:none;
+}
+
+/* Footer */
+footer{
+background:linear-gradient(90deg, #00296b, #3a86ff, #00296b);
+color:white;
+text-align:center;
+padding:20px;
+margin-top:10px;
+border-top:5px solid #ffffff;
+border-bottom:5px solid #ffffff;
+box-shadow:0 -5px 20px rgba(255,255,255,0.2);
+}
+
+footer p{
+font-size:18px;
+color:white;
+font-weight:500;
+text-shadow:1px 1px 2px rgba(0,0,0,0.3);
+}
+
+/* Style pour les textes importants */
+strong, b{
+color:#ffffff;
+font-size:1.1em;
+text-shadow:0 0 10px rgba(255,255,255,0.5);
+}
+
+/* Style pour les liens */
+a{
+color:#ffffff;
+text-decoration:none;
+border-bottom:2px solid rgba(255,255,255,0.3);
+transition:all 0.3s ease;
+}
+
+a:hover{
+color:#ffffff;
+border-bottom:2px solid #ffffff;
+text-shadow:0 0 10px white;
+}
+
+/* Style pour les listes */
+ul, ol{
+color:#ffffff;
+font-size:20px;
+line-height:1.8;
+}
+
+li{
+margin:10px 0;
+border-left:3px solid #ffffff;
+padding-left:15px;
+}
+
+/* Style pour la signature ASUS Vivobook */
+.texte:last-child, p:last-child{
+font-style:italic;
+color:#ffffff;
+font-weight:bold;
+text-align:center;
+border:2px solid #ffffff;
+border-radius:15px;
+padding:12px 25px;
+display:inline-block;
+margin:20px auto;
+background:linear-gradient(145deg, #3a86ff, #1a4a8a);
+box-shadow:0 10px 20px rgba(255,255,255,0.3);
+}
+
+/* Éléments décoratifs blancs */
+header::after{
+content:'⚽';
+position:absolute;
+font-size:60px;
+color:rgba(255,255,255,0.1);
+right:20px;
+top:50%;
+transform:translateY(-50%);
+animation:floatBall 6s ease-in-out infinite;
+}
+
+@keyframes floatBall{
+0%,100%{transform:translateY(-50%) rotate(0deg);}
+50%{transform:translateY(-60%) rotate(10deg);}
+}
+
+/* Responsive design */
+@media (max-width:768px){
+h1{font-size:32px;}
+h2{font-size:24px;}
+p{font-size:20px;}
+section{padding:20px;margin:10px;}
+nav ul{justify-content:center;}
+nav ul li{margin:5px;}
+nav a{padding:8px 15px;font-size:14px;}
+}
